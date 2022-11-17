@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Global Scope
+        var a=10;
+        var a=20;
+        // console.log("the value of a is",a)
+        let b=20.4;
+    //  let b=30.4;
+        // console.log("the value of b is",b)
+        const city="Bangalore";
+        // console.log("the value of city is",city)
+        // Functional Scope
+
+        function data(){
+            var a1=2345;
+            let b1=345;
+            const city1="Mumbai";
+
+            console.log("The value of a1 is :", a);
+            console.log("The value of b1 is :", b1);
+            console.log("The value of city1 is :", city1);
+
+            // Block Scope
+            if(3<5){
+            var a2=20;
+            let b2=23.74;
+            const name="Dolly";
+
+            console.log(a2);
+        }    
+    }
+        data();
+        console.log(2===3);
+        if(2>9){
+            console.log("The number is one greater")
+        }
+        else{
+            console.log("the number two is greater")
+        }
+
+        // var username="Admin"
+        // var password="Pass"
+
+        // var username=prompt("Enter the username")
+        // var password=prompt("Enter the password")
+        // if(username=="Admin" && password=="Pass"){
+        //     console.log("You are logged in")
+
+        // }
+        // else{
+        //     console.log("Invalid Credentials")
+        // }
+
+        var num1=parseInt(prompt("Enter the value"))
+        var num2=parseInt(prompt("Enter the value "))
+        console.log("the addition of two valuse are ",(num1+num2))
+    </script>
+</body>
+</html>

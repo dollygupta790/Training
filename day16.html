@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <div align="center">
+        <h1 id="a">Introduction</h1>
+        <h2 class="b">Chapter 1</h2>
+        <h3>Thank You</h3>
+        <!-- Dom Events -->
+        <!-- <button onclick="task()">Click here !</button> -->
+        <!-- <button ondblclick="task()">Click here !</button> -->
+        <button onmouseenter="task()">Click here !</button>
+    </div>
+    <script>
+        // document.getElementById("a").innerHTML="This is modified by Dom Selector";
+        document.getElementsByClassName("b")[0]. innerHTML="This is new Chapter";
+        // document.getElementsByTagName("h3")[0].innerHTML="Welcome";
+    function task(){
+        document.getElementById("a").innerHTML="WelcomeAll";
+    }    
+    </script>
+</body>
+</html>
